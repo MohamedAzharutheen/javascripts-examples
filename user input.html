@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <form>
+      
+        <input type="text" id="input_num">
+
+        <button onclick="odd_even()">clickhere</button>
+
+    </form>
+
+    <script>
+
+        function odd_even(){
+         
+            a = Number.parseInt( document.getElementById("input_num").value)
+         if(a<6){
+
+             if(a %2 ==0 ){
+                document.write("even number");
+             }
+             else{
+                document.write("odd number");
+             }
+
+         }
+
+        };
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h1 id="demo"></h1><br>
+
+<h1 id="demo1"></h1>
+
+
+<label>enter your number</label>
+
+<input type="number" id="input_num"   placeholder="enter your number">
+<button type="submit"  onclick="odd_even()">Click Here..</button>
+<script>
+
+
+function odd_even(){
+ 
+    a = Number(document.getElementById("input_num").value);
+
+    if(a<=6){
+        
+    if(a %2 ==0){
+        document.write("it is an even number")
+        
+    } else {
+        document.write("it is an odd number");
+    }
+}
+    }
+// const number = prompt("enter a number");
+// if(number<=6){
+// if(  number<6 %2 ==0){
+//     console.log("it is even number")
+// }
+
+// else{
+//     console.log("it is odd number")
+// }}
+
+ 
+
+</script>
+
+</body>
+</html>

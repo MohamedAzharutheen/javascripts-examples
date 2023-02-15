@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container bg-blue-300 py-20 h-screen ">
+        <div id = "box" class=" my-28  bg-white max-w-[20%] mx-auto p-10 rounded  ">
+
+
+            <p class="mt-5 font-bold uppercase">Your Otp Is:<span id="demo" class="text-blue-500 p-1  p-2  "> </span></p>
+            <button onclick="otp_generate()" class=" border-black bg-orange-500 text-white rounded-2xl p-2 font-bold my-9 hover:bg-orange-700">Generate OTp</button>
+        </div>
+    </div>
+
+    <script>
+        function otp_generate(){
+            const digits = "1q23q456s78f90";
+            let otp ='';
+
+            for(let i=0;i<=5;i++){
+                otp += digits[Math.floor(Math.random()*10)];
+            }
+
+            var span =document.getElementById("demo");span.innerHTML=otp;
+        }
+    </script>
+</body>
+</html>
